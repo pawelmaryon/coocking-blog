@@ -1,0 +1,11 @@
+   <%= simple_form_for(post) do |f| %>
+         <%= f.input :title,
+                      required: true,
+                      autofocus: true %> 
+         <%= f.input :content,
+                      required: true,
+                      autofocus: true %> 
+         <div class="form-actions">
+          <%= f.button :submit, "Publikuj" %>
+        </div>
+      <% end %>
