@@ -1,0 +1,23 @@
+ <div class="container">
+  <div class="row">
+    <div class="col-4-sm">
+      <%= simple_form_for(post) do |f| %>
+        <div class="form-inputs">
+          <%= f.input :title,
+                      required: false,
+                      autofocus: true,
+                      input_html: { autocomplete: "what's the title?" } %>
+          <%= f.input :content,
+                      required: false,
+                      input_html: { autocomplete: "description" } %>
+        </div>
+
+        <div class="form-actions ">
+          <div class="btn-primary">
+            <%= f.button :submit, "Proccess" %>
+          </div>
+        </div>
+      <% end %> 
+    </div>
+  </div>
+</div>

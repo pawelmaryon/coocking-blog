@@ -1,0 +1,7 @@
+<%= link_to "Home Page", root_path %>
+<%= link_to "New Post", new_post_path %>
+
+<h1>Posts#index</h1>
+<% @posts.each do |post| %>
+  <h5><%= post.title %></h5>
+<% end %>
